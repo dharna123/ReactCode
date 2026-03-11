@@ -1,7 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
-import {useEffect,useState} from "react"
-import axios from "axios";
+
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import AddStudent from './AddStudent';
 import Home from './Home';

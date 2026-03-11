@@ -11,12 +11,12 @@ const [formData,setFormData]=useState({name:"",age:"",course:""})
 useEffect(()=>{
     axios.get("http://localhost:5000/students")
     .then(res=>{
-       const student= res.data.find(s=>s.id==id)
+       const student= res.data.find(s=>s.id===id)
        setFormData(student)
 
     }
     )
-},[])
+},[id])
 
 const handleChange=(e)=>{
 
